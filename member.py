@@ -3,6 +3,7 @@ import random
 
 class Member(Person):
     def __init__(self, name, age, favorite_color, member_id, reward_points):
+        # called the __init__ method of the Person class to handle name, age, favorite color
         super().__init__(name, age, favorite_color)
         self.member_id = member_id
         self.reward_points = reward_points
