@@ -1,10 +1,14 @@
 from artist import Artist
- 
+
+# class Album inherits from class Artist
 class Album(Artist):
     def __init__(self, name, age, artist_name):
+        # called the __init__ method of class User to handle name, age, and artist name.
         super().__init__(name, age, artist_name)
+        # list is empty so that user can add a new album. 
         self.new_album = []
 
+    # Lil Baby albums + songs.
     def choose_album_1(self):
         choice = input(""" Lil Baby albums:
         1. My turn (2020)
@@ -24,7 +28,6 @@ class Album(Artist):
                 song = open('albums/lilbaby_2.txt', 'r').readlines()
                 for line in song:
                     print(line.rstrip())
-
         elif choice == '2':
             answer = input(""" Choose from the following songs:
             1. Global
@@ -39,6 +42,7 @@ class Album(Artist):
                 for line in song:
                     print(line.rstrip())
         
+    # Polo G albums + songs.
     def choose_album_2(self):
         choice = input(""" Polo G albums:
         1. The Goat (2020)
@@ -71,6 +75,7 @@ class Album(Artist):
                 for line in song:
                     print(line.rstrip())
 
+    # Jack Harlow albums + songs.
     def choose_album_3(self):
         choice = input(""" Jack Harlow albums:
         1. Sweet Action (2020)
@@ -102,7 +107,10 @@ class Album(Artist):
                 song = open('albums/harlow_4.txt', 'r').readlines()
                 for line in song:
                     print(line.rstrip())
-        
+
+# --------------------------- This represents the end of hip hop/rap artists and start of pop artists ---------------------------------------------------------------------
+    
+    # Billie Eilish albums + songs.
     def choose_album_4(self):
         choice = input(""" Billie Eilish albums:
         1. When We All Fall Asleep, Where Do We Go? (2019)
@@ -135,6 +143,7 @@ class Album(Artist):
                 for line in song:
                     print(line.rstrip())
     
+    # The Weeknd albums + songs.
     def choose_album_5(self):
         choice = input(""" The Weeknd albums:
         1. After Hours (2020)
@@ -167,6 +176,7 @@ class Album(Artist):
                 for line in song:
                     print(line.rstrip())
     
+    # Bruno Mars albums + songs.
     def choose_album_6(self):
         choice = input(""" Bruno Mars albums:
         1. 24K Magic (2016)
@@ -215,12 +225,12 @@ class Album(Artist):
         for album in self.new_album:
             print(f'The following album has been added: {album}')
 
-omar = Album('Omar', 19, 'lil baby')
+# omar = Album('Omar', 19, 'lil baby')
 # omar.choose_album_1()
-omar.choose_album_2()
-omar.choose_album_3()
-omar.choose_album_4()
-omar.choose_album_5()
-omar.choose_album_6()
-omar.add_album('new album')
-omar.show_new_album()
+# omar.choose_album_2()
+# omar.choose_album_3()
+# omar.choose_album_4()
+# omar.choose_album_5()
+# omar.choose_album_6()
+# omar.add_album('new album')
+# omar.show_new_album()

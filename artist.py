@@ -1,11 +1,15 @@
 from user import User
 
+# class Artist inherits from class User.
 class Artist(User):
     def __init__(self, name, age, artist_name):
+        # called the __init__ method of class User to handle name and age.
         super().__init__(name, age)
         self.artist_name = artist_name
+        # list is empty so that user can add a new artist. 
         self.new_artist = []
     
+    # hiphop/rap artists
     def choose_artist_1(self):
         choice = input(""" Please choose from the following artists:
         1. Lil Baby
@@ -20,8 +24,9 @@ class Artist(User):
         elif choice == '3':
             print(f'Jack Harlow is an American rapper and songwriter from Shelbyville, Kentucky. ')
         elif choice == '4':
-            print(f'Sorry, we do not have that artist yet. ')
+            print(f'Sorry, these are all the artists we currently have. ')
     
+    # pop artists
     def choose_artist_2(self):
         choice = input(""" Please choose from the following artists:
         1. Billie Eilish
@@ -36,7 +41,7 @@ class Artist(User):
         elif choice == '3':
             print(f'Bruno Mars is an American singer, songwriter, record producer, musician, and dancer from Honolulu, Hawaii. ')
         elif choice == '4':
-            print(f'Sorry, we do not have that artist yet. ')
+            print(f'Sorry, these are all the artists we currently have. ')
         
     def add_artist(self, artist):
         choice = input(""" Would you like to add a new artist?

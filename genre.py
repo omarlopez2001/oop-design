@@ -1,9 +1,12 @@
 from user import User
 
+# class Genre inherits from class User.
 class Genre(User):
     def __init__(self, name, age, genre):
+        # called the __init__ method of class User to handle name and age.
         super().__init__(name, age)
         self.genre = genre
+        # list is empty so that user can add a new genre. 
         self.new_genre = []
 
     def choose_genre(self):
@@ -17,7 +20,7 @@ class Genre(User):
         elif choice == '2':
             print(f'You have chosen pop.')
         elif choice == '3':
-            print(f'Sorry, we do not have that genre yet.')
+            print(f'Sorry, these are all the genres we currently have.')
         
     def add_genre(self, genres):
         choice = input(""" Would you like to add a genre?
