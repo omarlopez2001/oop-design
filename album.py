@@ -24,16 +24,20 @@ class Album(Artist):
                 song = open('albums/lilbaby_2.txt', 'r').readlines()
                 for line in song:
                     print(line.rstrip())
-                    
+
         elif choice == '2':
             answer = input(""" Choose from the following songs:
             1. Global
             2. Time (feat. Meek Mill)
             """)
             if answer == '1':
-                print()
+                song = open('albums/lilbaby_3.txt', 'r').readlines()
+                for line in song:
+                    print(line.rstrip())
             elif answer == '2':
-                print()
+                song = open('albums/lilbaby_4.txt', 'r').readlines()
+                for line in song:
+                    print(line.rstrip())
         
     def choose_album_2(self):
         choice = input(""" Polo G albums:
@@ -41,29 +45,95 @@ class Album(Artist):
         2. Die a Legend (2019)
         """)
         if choice == '1':
-            print()
+            answer = input(""" Choose from the following songs:
+            1. Be Something (feat. Lil Baby)
+            2. Flex (feat. Juice WRLD)
+            """)
+            if answer == '1':
+                song = open('albums/polog_1.txt', 'r').readlines()
+                for line in song:
+                    print(line.rstrip())
+            elif answer == '2':
+                song = open('albums/polog_2.txt', 'r').readlines()
+                for line in song:
+                    print(line.rstrip())
         elif choice == '2':
-            print()
+            answer = input(""" Choose from the following songs:
+            1. Pop Out (feat. Lil Tjay)
+            2. Effortless
+            """)
+            if answer == '1':
+                song = open('albums/polog_3.txt', 'r').readlines()
+                for line in song:
+                    print(line.rstrip())
+            elif answer == '2':
+                song = open('albums/polog_4.txt', 'r').readlines()
+                for line in song:
+                    print(line.rstrip())
 
     def choose_album_3(self):
         choice = input(""" Jack Harlow albums:
         1. Sweet Action (2020)
-        2. Thats What They All (2020)
+        2. Thats What They All Say (2020)
         """)
         if choice == '1':
-            print()
+            answer = input(""" Choose from the following songs:
+            1. WHATS POPPIN
+            2. 2STYLISH
+            """)
+            if answer == '1':
+                song = open('albums/harlow_1.txt', 'r').readlines()
+                for line in song:
+                    print(line.rstrip())
+            elif answer == '2':
+                song = open('albums/harlow_2.txt', 'r').readlines()
+                for line in song:
+                    print(line.rstrip())
         elif choice == '2':
-            print()
+            answer = input(""" Choose from the following songs:
+            1. Tyler Herro
+            2. Way Out (feat. Big Sean)
+            """)
+            if answer == '1':
+                song = open('albums/harlow_3.txt', 'r').readlines()
+                for line in song:
+                    print(line.rstrip())
+            elif answer == '2':
+                song = open('albums/harlow_4.txt', 'r').readlines()
+                for line in song:
+                    print(line.rstrip())
         
     def choose_album_4(self):
         choice = input(""" Billie Eilish albums:
         1. When We All Fall Asleep, Where Do We Go? (2019)
-        2. Live at Third Man Records (2019)
+        2. dont smile at me (2017)
         """)
         if choice == '1':
-            print()
+            answer = input(""" Choose from the following songs:
+            1. bad guy
+            2. when the party's over
+            """)
+            if answer == '1':
+                song = open('albums/billie_1.txt', 'r').readlines()
+                for line in song:
+                    print(line.rstrip())
+            elif answer == '2':
+                song = open('albums/billie_2.txt', 'r').readlines()
+                for line in song:
+                    print(line.rstrip())
         elif choice == '2':
-            print()
+            answer = input(""" Choose from the following songs:
+            1. idontwannabeyouanymore
+            2. ocean eyes
+            """)
+            if answer == '1':
+                song = open('albums/billie_3.txt', 'r').readlines()
+                for line in song:
+                    print(line.rstrip())
+            elif answer == '2':
+                song = open('albums/billie_4.txt', 'r').readlines()
+                for line in song:
+                    print(line.rstrip())
     
     def choose_album_5(self):
         choice = input(""" The Weeknd albums:
@@ -71,9 +141,31 @@ class Album(Artist):
         2. Starboy (2016)
         """)
         if choice == '1':
-            print()
+            answer = input(""" Choose from the following songs:
+            1. Heartless
+            2. Blinding Lights
+            """)
+            if answer == '1':
+                song = open('albums/weeknd_1.txt', 'r').readlines()
+                for line in song:
+                    print(line.rstrip())
+            elif answer == '2':
+                song = open('albums/weeknd_2.txt', 'r').readlines()
+                for line in song:
+                    print(line.rstrip())
         elif choice == '2':
-            print()
+            answer = input(""" Choose from the following songs:
+            1. Starboy
+            2. I Feel It Coming (feat. Daft Punk)
+            """)
+            if answer == '1':
+                song = open('albums/weeknd_3.txt', 'r').readlines()
+                for line in song:
+                    print(line.rstrip())
+            elif answer == '2':
+                song = open('albums/weeknd_4.txt', 'r').readlines()
+                for line in song:
+                    print(line.rstrip())
     
     def choose_album_6(self):
         choice = input(""" Bruno Mars albums:
@@ -81,9 +173,31 @@ class Album(Artist):
         2. Unorthodox Jukebox (2012)
         """)
         if choice == '1':
-            print()
+            answer = input(""" Choose from the following songs:
+            1. 24K Magic
+            2. That's What I Like
+            """)
+            if answer == '1':
+                song = open('albums/bruno_1.txt', 'r').readlines()
+                for line in song:
+                    print(line.rstrip())
+            elif answer == '2':
+                song = open('albums/bruno_2.txt', 'r').readlines()
+                for line in song:
+                    print(line.rstrip())
         elif choice == '2':
-            print()
+            answer = input(""" Choose from the following songs:
+            1. When I Was Your Man
+            2. Locked Out of Heaven
+            """)
+            if answer == '1':
+                song = open('albums/bruno_3.txt', 'r').readlines()
+                for line in song:
+                    print(line.rstrip())
+            elif answer == '2':
+                song = open('albums/bruno_4.txt', 'r').readlines()
+                for line in song:
+                    print(line.rstrip())
 
     def add_album(self, album):
         choice = input(""" Would you like to add a new album?
@@ -102,7 +216,7 @@ class Album(Artist):
             print(f'The following album has been added: {album}')
 
 omar = Album('Omar', 19, 'lil baby')
-omar.choose_album_1()
+# omar.choose_album_1()
 omar.choose_album_2()
 omar.choose_album_3()
 omar.choose_album_4()
