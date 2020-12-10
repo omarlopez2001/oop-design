@@ -39,7 +39,7 @@ class Genre(User):
             print(f'The following genre has been added: {genres}')
             
 
-# omar = Genre('omar', 19, 'hiphop/rap')
-# omar.choose_genre()
-# omar.add_genre('new genre')
-# omar.show_new_genre()
+omar = Genre('omar', 19, 'hiphop/rap')
+omar.choose_genre()
+omar.add_genre('new genre')
+omar.show_new_genre()

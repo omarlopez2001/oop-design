@@ -59,8 +59,8 @@ class Artist(User):
         for artist in self.new_artist:
             print(f'The following artist has been added: {artist}')
 
-# omar = Artist('Omar', 19, 'lil baby')
-# omar.choose_artist_1()
-# omar.choose_artist_2()
-# omar.add_artist('new artist')
-# omar. show_new_artist()
+omar = Artist('Omar', 19, 'lil baby')
+omar.choose_artist_1()
+omar.choose_artist_2()
+omar.add_artist('new artist')
+omar. show_new_artist()

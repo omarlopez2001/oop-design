@@ -3,7 +3,7 @@ from artist import Artist
 # class Album inherits from class Artist
 class Album(Artist):
     def __init__(self, name, age, artist_name):
-        # called the __init__ method of class User to handle name, age, and artist name.
+        # called the __init__ method of class Artist to handle name, age, and artist name.
         super().__init__(name, age, artist_name)
         # list is empty so that user can add a new album. 
         self.new_album = []
@@ -225,12 +225,12 @@ class Album(Artist):
         for album in self.new_album:
             print(f'The following album has been added: {album}')
 
-# omar = Album('Omar', 19, 'lil baby')
-# omar.choose_album_1()
-# omar.choose_album_2()
-# omar.choose_album_3()
-# omar.choose_album_4()
-# omar.choose_album_5()
-# omar.choose_album_6()
-# omar.add_album('new album')
-# omar.show_new_album()
+omar = Album('Omar', 19, 'lil baby')
+omar.choose_album_1()
+omar.choose_album_2()
+omar.choose_album_3()
+omar.choose_album_4()
+omar.choose_album_5()
+omar.choose_album_6()
+omar.add_album('new album')
+omar.show_new_album()

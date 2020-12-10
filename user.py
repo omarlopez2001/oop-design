@@ -12,6 +12,6 @@ class User:
     def user_age(self):
         print(f'{self.name} is {self.age} years old.')
 
-# omar = User('Omar Lopez', 19)
-# omar.greet_user()
-# omar.user_age()
+omar = User('Omar Lopez', 19)
+omar.greet_user()
+omar.user_age()
